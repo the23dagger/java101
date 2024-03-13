@@ -1,4 +1,3 @@
-
 public class controlCheckmate{
     public static boolean control(int x, int y , char hamlesirasi){
 
@@ -23,9 +22,6 @@ public class controlCheckmate{
                 return false;
             }
         }   
-        
-    
-        
             
     }
 }

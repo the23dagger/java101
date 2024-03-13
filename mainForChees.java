@@ -12,21 +12,7 @@ public class mainForChees {
         {"K ", "A ", "F ", "V ", "Ş ", "F ", "A ", "K "}
     };
     public static char hamlesirasi;
-
-
-    public static void main(String[] args) {
-        Scanner inp = new Scanner(System.in);
-        //sayıyı al
-        System.out.print("Bir sayı Giriniz : ");
-        int num=inp.nextInt();
-        for(int i=0;i<=num;i++){
-            if(i%2==0){
-                System.out.println(i);
-            }
-        }
-        System.out.println("deneme");
-
-    }
+//silinen kısım
     static void oyuntahtasi(){
     
         System.out.println("    0   1   2   3   4   5   6   7");
