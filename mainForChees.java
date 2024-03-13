@@ -1,5 +1,6 @@
+
 import java.util.Scanner;
-//Pratik - Girilen Sayıya Kadar Olan Çift Sayıları Bulan Program
+
 public class mainForChees {
     public static String[][] tahta = {
         {"k ", "a ", "f ", "v ", "ş ", "f ", "a ", "k "},
@@ -12,8 +13,36 @@ public class mainForChees {
         {"K ", "A ", "F ", "V ", "Ş ", "F ", "A ", "K "}
     };
     public static char hamlesirasi;
+    public static void main(String[] args) {
+        System.out.println("---- Satranç Oyunu ----");
+        Scanner scanner = new Scanner(System.in);
+        oyuntahtasi();
+        System.out.println("tarafınızı seçin(siyah='S' beyaz='B')");
+        hamlesirasi = scanner.next().charAt(0);
+        while (true) { 
+            System.out.println("oyundan çıkmak için x yerine 8 e basın");
+            System.out.println("hangi koordinattaki taşı seçeceksiniz? \n koordinatları giriniz:");
+            System.out.println("x için: ");
+            int x = scanner.nextInt();
+            if(x == 8){
+                break;
+            }
+            System.out.println("y için: ");
+            int y = scanner.nextInt();
+            //pieces e veriler gönderilecek (gidebileceği yerleri gösterir)
+            System.out.println("hangisine gitmek istiyorsunuz? ");
+            int secim_x = scanner.nextInt();
+            int secim_y = scanner.nextInt();
+            tahta[secim_x][secim_y]=tahta[x][y];
+            tahta[x][y]="  ";
+            oyuntahtasi();
+ 
+
+        }
+        
+    }
 //silinen kısım
-    static void oyuntahtasi(){
+    public static void oyuntahtasi(){
     
         System.out.println("    0   1   2   3   4   5   6   7");
         for(int i=0; i<8;i++){
