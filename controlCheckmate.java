@@ -5,7 +5,7 @@ public class controlCheckmate{
         boolean isLowerCase = mainForChees.tahta[x][y].toLowerCase().equals(mainForChees.tahta[x][y]);
         boolean isUpperCase = mainForChees.tahta[x][y].toUpperCase().equals(mainForChees.tahta[x][y]);
         
-        if(hamlesirasi == 'S'){
+        if(hamlesirasi == 'B'){
             if("  ".equals(mainForChees.tahta[x][y]) || isLowerCase){
                 return true;
             }
